@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    exclude-paths:
+      - "/attic/**"
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: nuget
+    directory: "/"
+    exclude-paths:
+      - "/attic/**"
+    schedule:
+      interval: weekly
