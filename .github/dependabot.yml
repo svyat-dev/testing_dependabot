@@ -1,15 +1,17 @@
 version: 2
 updates:
-  - package-ecosystem: npm
+  # Ignore all files in the attic directory for the node ecosystem
+  - package-ecosystem: "npm"
     directory: "/"
+    schedule:
+      interval: "daily"
     exclude-paths:
       - "attic/**"
-    schedule:
-      interval: weekly
 
-  - package-ecosystem: nuget
+  # Ignore all files in the attic directory for the .NET ecosystem (nuget)
+  - package-ecosystem: "nuget"
     directory: "/"
+    schedule:
+      interval: "daily"
     exclude-paths:
       - "attic/**"
-    schedule:
-      interval: weekly
