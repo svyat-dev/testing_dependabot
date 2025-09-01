@@ -3,13 +3,13 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     exclude-paths:
-      - "/attic/**"
+      - "attic/**"
     schedule:
       interval: weekly
 
   - package-ecosystem: nuget
     directory: "/"
     exclude-paths:
-      - "/attic/**"
+      - "attic/**"
     schedule:
       interval: weekly
